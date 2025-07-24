@@ -1,0 +1,23 @@
+{
+    "name": "numaxlab/laravel-dinahosting",
+    "description": "Laravel utilities for Dinahosting hosted projects",
+    "type": "library",
+    "require": {
+        "php": "^8.2",
+        "illuminate/console": "*",
+        "illuminate/support": "*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "NumaxLab\\Laravel\\Dinahosting\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adrián P. Blunier",
+            "email": "adrian@numax.org"
+        }
+    ],
+    "minimum-stability": "stable"
+}
