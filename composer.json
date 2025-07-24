@@ -13,6 +13,13 @@
             "NumaxLab\\Laravel\\Dinahosting\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NumaxLab\\Laravel\\Dinahosting\\LaravelDinahostingServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "Adrián P. Blunier",
