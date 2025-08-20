@@ -1,0 +1,9 @@
+@servers(['web' => 'user@server'])
+
+@task('dinahosting-deploy')
+    cd ~/your-project-dir
+    git pull origin main
+    $HOME/.bin/php -d disable_functions= $HOME/composer.phar install --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader --no-scripts
+    $HOME/.bin/php artisan package:discover --ansi
+    $HOME/.bin/php artisan migrate --force
+@endtask
