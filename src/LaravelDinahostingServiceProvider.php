@@ -4,6 +4,7 @@ namespace NumaxLab\Laravel\Dinahosting;
 
 use Illuminate\Support\ServiceProvider;
 use NumaxLab\Laravel\Dinahosting\Console\Commands\DinahostingSymlink;
+use NumaxLab\Laravel\Dinahosting\Console\Commands\EnvoySetup;
 
 class LaravelDinahostingServiceProvider extends ServiceProvider
 {
@@ -14,6 +15,7 @@ class LaravelDinahostingServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 DinahostingSymlink::class,
+                EnvoySetup::class,
             ]);
         }
     }
