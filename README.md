@@ -44,7 +44,7 @@ php artisan dinahosting:envoy-setup --force
 After running the command, edit the generated `Envoy.blade.php` to set your server credentials and project directory, then run your first deploy:
 
 ```bash
-php vendor/bin/envoy run deploy
+php vendor/bin/envoy run dinahosting-deploy
 ```
 
 The generated Envoy task pulls the latest code from `main`, installs Composer dependencies (without dev packages), runs `package:discover`, and executes pending migrations — using Dinahosting's custom PHP binary path (`$HOME/.bin/php`).
